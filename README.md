@@ -1,6 +1,42 @@
 # social_media_buttons
 
-A new Flutter project.
+# usage: 
+
+use SocialMediaButton named constructors such as : 
+`SocialMediaButton.twitter()`,
+`SocialMediaButton.instagram()`,
+`SocialMediaButton.linkedin()`,
+`SocialMediaButton.github()` and more
+
+```dart
+Widget buildSocialMediaButton(){
+  return SocialMediaButton.twitter(
+     url: "https://twitter.com/CipliOnat",
+     size: 35,
+     color: Colors.blue,
+  );
+}
+```
+or Just use onTap callback, be careful onTap and url shouldn't be provided at the same time.
+```dart
+Widget buildSocialMediaButton(){
+  return SocialMediaButton.twitter(
+     onTap: (){
+       print('or just use onTap callback');
+     },
+     size: 35,
+     color: Colors.blue,
+  );
+}
+```
+
+or just use with `Icon` widget
+
+```dart
+Widget buildSocialMediaIcon(){
+  return Icon(SocialMediaIcons.github);
+}
+```
 
 ## Getting Started
 
