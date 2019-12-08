@@ -182,9 +182,14 @@ class SocialMediaButton extends StatelessWidget {
         ),
         onTap: () {
           if (url != null) {
-            if (Platform.isIOS || Platform.isAndroid) {
-              _launchURLInMobile(url);
-            } else {
+            try {
+              if (Platform.isIOS || Platform.isAndroid) {
+                _launchURLInMobile(url);
+              } else {
+                _launchURLInWeb(url);
+              }
+            } catch (e) {
+              print(e);
               _launchURLInWeb(url);
             }
             return;

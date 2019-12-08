@@ -40,6 +40,8 @@ class SocialMediaIcons {
 
   static const _kFontFam = 'SocialMediaIcons';
 
+  static const IconData medium = const IconData(0xf23a,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
   static const IconData stackoverflow = const IconData(0xe800,
       fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
   static const IconData appstore = const IconData(0xe801,
