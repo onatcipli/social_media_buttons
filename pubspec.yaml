@@ -1,8 +1,8 @@
 name: social_media_buttons
 description: A new Flutter project.
 version: 0.0.1
-author:
-homepage:
+author: Onat Cipli<ciplionat35@gmail.com>
+homepage: https://github.com/onatcipli/social_media_buttons
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  universal_html:
+  url_launcher: ^5.2.7
 
 dev_dependencies:
   flutter_test:
