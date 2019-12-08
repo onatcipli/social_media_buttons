@@ -40,39 +40,74 @@ class SocialMediaIcons {
 
   static const _kFontFam = 'SocialMediaIcons';
 
-  static const IconData stackoverflow = const IconData(0xe800, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData appstore = const IconData(0xe801, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData android = const IconData(0xe802, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData soundcloud = const IconData(0xe803, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData dribbble_circled = const IconData(0xf04f, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData twitter = const IconData(0xf099, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData facebook = const IconData(0xf09a, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData github_circled = const IconData(0xf09b, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData pinterest_circled = const IconData(0xf0d2, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData pinterest_squared = const IconData(0xf0d3, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData gplus = const IconData(0xf0d5, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData linkedin = const IconData(0xf0e1, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData youtube_squared = const IconData(0xf166, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData youtube = const IconData(0xf167, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData youtube_play = const IconData(0xf16a, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData dropbox = const IconData(0xf16b, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData instagram = const IconData(0xf16d, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData dribbble = const IconData(0xf17d, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData skype = const IconData(0xf17e, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData stackexchange = const IconData(0xf18d, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData google = const IconData(0xf1a0, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData reddit = const IconData(0xf1a1, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData reddit_squared = const IconData(0xf1a2, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData spotify = const IconData(0xf1bc, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData facebook_official = const IconData(0xf230, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData pinterest = const IconData(0xf231, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData whatsapp = const IconData(0xf232, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData reddit_alien = const IconData(0xf281, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData snapchat_ghost = const IconData(0xf2ac, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData snapchat_square = const IconData(0xf2ad, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData github_squared = const IconData(0xf300, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData twitter_squared = const IconData(0xf304, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData facebook_squared = const IconData(0xf308, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData linkedin_squared = const IconData(0xf30c, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
-  static const IconData instagram_old = const IconData(0xf31e, fontFamily: _kFontFam, fontPackage:  'social_media_buttons');
+  static const IconData stackoverflow = const IconData(0xe800,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData appstore = const IconData(0xe801,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData android = const IconData(0xe802,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData soundcloud = const IconData(0xe803,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData dribbble_circled = const IconData(0xf04f,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData twitter = const IconData(0xf099,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData facebook = const IconData(0xf09a,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData github_circled = const IconData(0xf09b,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData pinterest_circled = const IconData(0xf0d2,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData pinterest_squared = const IconData(0xf0d3,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData gplus = const IconData(0xf0d5,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData linkedin = const IconData(0xf0e1,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData youtube_squared = const IconData(0xf166,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData youtube = const IconData(0xf167,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData youtube_play = const IconData(0xf16a,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData dropbox = const IconData(0xf16b,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData instagram = const IconData(0xf16d,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData dribbble = const IconData(0xf17d,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData skype = const IconData(0xf17e,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData stackexchange = const IconData(0xf18d,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData google = const IconData(0xf1a0,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData reddit = const IconData(0xf1a1,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData reddit_squared = const IconData(0xf1a2,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData spotify = const IconData(0xf1bc,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData facebook_official = const IconData(0xf230,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData pinterest = const IconData(0xf231,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData whatsapp = const IconData(0xf232,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData reddit_alien = const IconData(0xf281,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData snapchat_ghost = const IconData(0xf2ac,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData snapchat_square = const IconData(0xf2ad,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData github_squared = const IconData(0xf300,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData twitter_squared = const IconData(0xf304,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData facebook_squared = const IconData(0xf308,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData linkedin_squared = const IconData(0xf30c,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData instagram_old = const IconData(0xf31e,
+      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
 }
