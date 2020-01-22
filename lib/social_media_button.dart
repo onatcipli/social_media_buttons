@@ -170,6 +170,14 @@ class SocialMediaButton extends StatelessWidget {
     this.color,
   });
 
+  const SocialMediaButton.medium({
+    this.iconData = SocialMediaIcons.medium,
+    @required this.url,
+    this.size = 24,
+    this.onTap,
+    this.color,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Padding(

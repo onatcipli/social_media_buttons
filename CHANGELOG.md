@@ -1,3 +1,7 @@
+## [0.1.2] - Button Update
+
+* Medium button added
+
 ## [0.1.1] - Icons Update
 
 * Medium article added
