@@ -8,11 +8,11 @@ import 'package:url_launcher/url_launcher.dart';
 class SocialMediaButton extends StatelessWidget {
   /// if url provided, the social media button will open the related url
   /// Be careful, you couldn't use both [url] and [onTap]
-  final String url;
+  final String? url;
 
   /// if [url] not provided, [onTap] will do the job
   /// It is only will work when [url] is null.
-  final GestureTapCallback onTap;
+  final GestureTapCallback? onTap;
 
   /// If you want to use other icons that we have in [SocialMediaIcons]
   /// you can use this parameter
@@ -22,21 +22,20 @@ class SocialMediaButton extends StatelessWidget {
   final double size;
 
   /// color of the Icon
-  final Color color;
+  final Color? color;
 
   const SocialMediaButton({
-    Key key,
-    @required this.url,
-    @required this.onTap,
-    @required this.iconData,
+    Key? key,
+    this.url,
+    this.onTap,
+    required this.iconData,
     this.size = 24,
     this.color,
-  })  : assert(url != null),
-        super(key: key);
+  }) : super(key: key);
 
   const SocialMediaButton.instagram({
     this.iconData = SocialMediaIcons.instagram,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -44,7 +43,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.twitter({
     this.iconData = SocialMediaIcons.twitter,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -52,7 +51,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.linkedin({
     this.iconData = SocialMediaIcons.linkedin,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -60,7 +59,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.stackoverflow({
     this.iconData = SocialMediaIcons.stackoverflow,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -68,7 +67,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.dribbble({
     this.iconData = SocialMediaIcons.dribbble,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -76,7 +75,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.facebook({
     this.iconData = SocialMediaIcons.facebook,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -84,7 +83,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.github({
     this.iconData = SocialMediaIcons.github_circled,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -92,7 +91,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.google({
     this.iconData = SocialMediaIcons.google,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -100,7 +99,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.pinterest({
     this.iconData = SocialMediaIcons.pinterest,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -108,7 +107,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.youtube({
     this.iconData = SocialMediaIcons.youtube,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -116,7 +115,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.whatsapp({
     this.iconData = SocialMediaIcons.whatsapp,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -124,7 +123,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.spotify({
     this.iconData = SocialMediaIcons.spotify,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -132,7 +131,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.reddit({
     this.iconData = SocialMediaIcons.reddit,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -140,7 +139,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.skype({
     this.iconData = SocialMediaIcons.skype,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -148,7 +147,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.stackexchange({
     this.iconData = SocialMediaIcons.stackexchange,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -156,7 +155,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.snapchat({
     this.iconData = SocialMediaIcons.snapchat_ghost,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -164,7 +163,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.soundcloud({
     this.iconData = SocialMediaIcons.soundcloud,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -172,7 +171,7 @@ class SocialMediaButton extends StatelessWidget {
 
   const SocialMediaButton.medium({
     this.iconData = SocialMediaIcons.medium,
-    @required this.url,
+    this.url,
     this.size = 24,
     this.onTap,
     this.color,
@@ -192,17 +191,17 @@ class SocialMediaButton extends StatelessWidget {
           if (url != null) {
             try {
               if (Platform.isIOS || Platform.isAndroid) {
-                _launchURLInMobile(url);
+                _launchURLInMobile(url!);
               } else {
-                _launchURLInWeb(url);
+                _launchURLInWeb(url!);
               }
             } catch (e) {
               print(e);
-              _launchURLInWeb(url);
+              _launchURLInWeb(url!);
             }
             return;
           } else if (onTap != null) {
-            onTap();
+            onTap!();
           } else {
             throw Exception(
                 'url and onTap shouldnt be null at the same time !');
