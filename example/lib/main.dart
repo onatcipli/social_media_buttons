@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:social_media_buttons/social_media_button.dart';
 import 'package:social_media_buttons/social_media_buttons.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,12 +16,13 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Social Media Buttons'),
+          title: const Text('Social Media Buttons'),
         ),
         body: GridView.count(
+          crossAxisCount: 3,
           children: <Widget>[
-            Icon(SocialMediaIcons.twitter),
-            SocialMediaButton.twitter(
+            const Icon(SocialMediaIcons.twitter),
+            const SocialMediaButton.twitter(
               url: "https://twitter.com/CipliOnat",
               size: 35,
               color: Colors.blue,
@@ -85,7 +88,6 @@ class MyApp extends StatelessWidget {
               },
             ),
           ],
-          crossAxisCount: 3,
         ),
       ),
     );

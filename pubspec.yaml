@@ -1,18 +1,18 @@
 name: social_media_buttons
-description: A package that helps you to put some SocialMediaButtons to your profile or protfolio, and with url parameter it's launches the related url on web and mobile too.
-version: 0.2.0
+description: A package that helps you to put some SocialMediaButtons to your profile or portfolio, and with url parameter it's launches the related url on web and mobile too.
+version: 1.0.0
 author: Onat Cipli<ciplionat35@gmail.com>
 homepage: https://github.com/onatcipli/social_media_buttons
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.15.1 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  universal_html: ^2.0.8
-  url_launcher: ^6.0.3
+  universal_html: ^2.2.1
+  url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
